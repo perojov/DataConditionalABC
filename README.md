@@ -22,10 +22,10 @@ $$\pi_\epsilon(\boldsymbol{\theta} \ \vert \ S(X^{\rm o}))  \propto \pi(\boldsym
 where $||\cdot||$ is an appropriate distance metric, $S(X)$ is a low-dimensional summarization of the trajectory $X$, $1( \Vert S(X) - S(X^{\rm o}) \Vert \leq \epsilon)$ is the indicator function, and $\epsilon>0$ a tolerance value determining the accuracy of the approximation.  
 
 `datacondabc` facilitates ABC posterior inference using the ABC-SMC algorithm with:
-* Fixed summary statistics estimation and forward simulation.
-* Fixed summary statistics estimation and data-conditional simulation.
-* Continually improving summary statistics estimation and forward simulation.
-* Continually improving summary statistics estimation and data-conditional simulation.
+* Fixed summary statistics function and forward simulation.
+* Fixed summary statistics function and data-conditional simulation.
+* Continually improving summary statistics function and forward simulation.
+* Continually improving summary statistics function and data-conditional simulation.
 
 ## Files
 
