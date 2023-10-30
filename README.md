@@ -18,7 +18,7 @@ Explain when one benefits of using data-conditional simulation...
 ## Files
 
 ### utilities.py
-Implements functions that are frequently used in the package. It includes numba jitted reimplementations of some standard functions like weighted random sampling and the LogSumExp function.
+Implements functions that are frequently used in the package. It also includes numba jitted reimplementations of some standard functions like weighted random sampling and the LogSumExp function.
 
 ### exact_simulators.py
 Implements two numba-jitted functions for sampling from the exact transition densities for the Ornstein--Uhlenbeck and Cox--Ingersoll--Ross model. Useful for when an exact observation is required for testing purposes. 
