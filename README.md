@@ -38,3 +38,6 @@ Implements two numba-jitted functions for sampling from the exact transition den
 ### simulators/approxsim.py
 Implements three numba-jitted functions for simulating trajectories: 1) the Euler-Maruyama method, 2) the lookahead sequential-importance-sampling method, and 3) a standard backward simulation particle smoother. 
 
+
+## References
+Petar Jovanovski, Andrew Golightly and Umberto Picchini: Towards Data-Conditional Simulation for ABC Inference in Stochastic Differential Equations. [arxiv:2310.10329](https://arxiv.org/abs/2310.10329), 2023
