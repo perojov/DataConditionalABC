@@ -29,6 +29,15 @@ where $||\cdot||$ is an appropriate distance metric, $S(X)$ is a low-dimensional
 
 ## Files
 
+### models.py
+Implements functions for the drift and diffusion of a few known SDE models: Ornstein--Uhlenbeck, Cox-Ingersoll-Ross, Chan-Karolyi–Longstaff–Sanders, as well as some experimental models with nonlinear drift.
+
+### nnets.py
+Implements the partially exchangeable neural network and the data module with pytorch-lightning.
+
+### samplers.py
+Implements the ABC-SMC samplers for the four different approaches: amortized_forward_abcsmc, amortized_backward_abcsmc, dynamic_backward_abcsmc and dynamic_forward_abcsmc. 
+
 ### utilities.py
 Implements functions that are frequently used in the package. It also includes numba jitted reimplementations of some standard functions like weighted random sampling and the LogSumExp function.
 
@@ -37,7 +46,6 @@ Implements two numba-jitted functions for sampling from the exact transition den
 
 ### simulators/approxsim.py
 Implements three numba-jitted functions for simulating trajectories: 1) the Euler-Maruyama method, 2) the lookahead sequential-importance-sampling method, and 3) a standard backward simulation particle smoother. 
-
 
 ## References
 Petar Jovanovski, Andrew Golightly and Umberto Picchini: Towards Data-Conditional Simulation for ABC Inference in Stochastic Differential Equations. [arxiv:2310.10329](https://arxiv.org/abs/2310.10329), 2023
