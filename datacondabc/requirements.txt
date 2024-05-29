@@ -1,0 +1,8 @@
+numba==0.56.2
+numpy==1.23.2
+numpy==1.22.0
+POT==0.9.1
+pytorch_lightning==1.7.4
+scipy==1.9.1
+torch==1.12.1
+tqdm==4.64.1
