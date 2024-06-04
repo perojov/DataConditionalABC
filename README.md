@@ -25,7 +25,7 @@ where $||\cdot||$ is an appropriate distance metric, $S(X)$ is a low-dimensional
 * Continually improving summary statistics function and data-conditional simulation.
 
 ## Running the code.
-`
+```python
 # Load data.
 obs = np.load("obs.npy")
 n = obs.shape[1] - 1
@@ -53,7 +53,7 @@ out = abcsmc_dataconditional(
 )
 with open("dc_inference_result.pkl", "wb") as f:
     pickle.dump(out, f)
-`
+```
 ## Files
 
 ### models.py
