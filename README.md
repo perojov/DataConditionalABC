@@ -25,6 +25,8 @@ where $||\cdot||$ is an appropriate distance metric, $S(X)$ is a low-dimensional
 * Continually improving summary statistics function and data-conditional simulation.
 
 ## Running the code.
+The following script reproduces the Lotka--Volterra example.
+
 ```python
 # Load data.
 obs = np.load("obs.npy")
@@ -51,6 +53,7 @@ out = abcsmc_dataconditional(
     nsubint=A,
     dt=dt,
 )
+
 with open("dc_inference_result.pkl", "wb") as f:
     pickle.dump(out, f)
 ```
