@@ -6,7 +6,7 @@ datacondbac is a Python package for conducting Bayesian inference for Stochastic
 
 ## Installation
 
-Download this folder and run the setup script.
+Download this folder and run `pip install .`.
 
 ## Overview
 
