@@ -59,23 +59,27 @@ with open("dc_inference_result.pkl", "wb") as f:
 ```
 ## Files
 
-### models.py
-Implements functions for the drift and diffusion of a few known SDE models: Ornstein--Uhlenbeck, Cox-Ingersoll-Ross, Chan-Karolyi–Longstaff–Sanders, nonlinear drift, Schlogl and Lotka--Volterra.
+- **`models.py`**  
+  Implements functions for the drift and diffusion of a few known SDE models: Ornstein--Uhlenbeck, Cox-Ingersoll-Ross, Chan-Karolyi–Longstaff–Sanders, nonlinear drift, Schlogl, and Lotka--Volterra.
 
-### nnets.py
-Implements the partially exchangeable neural network and the data module with pytorch-lightning.
+- **`nnets.py`**  
+  Implements the partially exchangeable neural network and the data module with `pytorch-lightning`.
 
-### samplers.py
-Implements the ABC-SMC samplers for the four different approaches: abcsmc_dataconditional and abcsmc_forward. 
+- **`samplers.py`**  
+  Implements the ABC-SMC samplers for the four different approaches: `abcsmc_dataconditional` and `abcsmc_forward`.
 
-### utilities.py
-Implements functions that are frequently used in the package. It also includes numba jitted reimplementations of some standard functions like weighted random sampling and the LogSumExp function.
+- **`utilities.py`**  
+  Implements functions that are frequently used in the package. It also includes `numba`-jitted reimplementations of some standard functions like weighted random sampling and the `LogSumExp` function.
 
-### simulators/exactsim.py
-Implements two numba-jitted functions for sampling from the exact transition densities for the Ornstein--Uhlenbeck and Cox--Ingersoll--Ross model. Useful for when an exact observation is required for testing purposes. 
+- **`simulators/exactsim.py`**  
+  Implements two `numba`-jitted functions for sampling from the exact transition densities for the Ornstein--Uhlenbeck and Cox--Ingersoll--Ross models. Useful for when an exact observation is required for testing purposes.
 
-### simulators/approxsim.py
-Implements three numba-jitted functions for simulating trajectories: 1) the Euler-Maruyama method, 2) the lookahead sequential-importance-sampling method, and 3) a standard backward simulation particle smoother. 
+- **`simulators/approxsim.py`**  
+  Implements `numba`-jitted functions for simulating trajectories: 
+  1) the Euler-Maruyama method, 
+  2) the lookahead sequential-importance-sampling method, 
+  3) a standard backward simulation particle smoother.
+
 
 ## References
 Petar Jovanovski, Andrew Golightly and Umberto Picchini: Towards Data-Conditional Simulation for ABC Inference in Stochastic Differential Equations. [arxiv:2310.10329](https://arxiv.org/abs/2310.10329), 2023
